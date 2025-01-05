@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+       
+        <div class="card-body text-center">
+            <h2 class="text-center normal-text">Uploaded Image:</h2>
+            <img src="/media/{{ image_url }}" class="img-fluid mx-auto d-block m-3" alt="Uploaded Image">
+            <h2 class="text-center m-3 normal-text">Predicted Category: </h2>
+           <h2 class="text-success display-3 fw-bolder text-predict">{{ predicted_category }}</h2>
+            <a href="/" class="btn   text-center w-50 mt-3 p-3 btn-outline-success normal-text"> Go back to home <i class="fa fa-arrow-left text-white normal-text"></i></a>
+        </div>
+    </div>
+</div>
+{% endblock %}
